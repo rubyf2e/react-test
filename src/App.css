@@ -1,0 +1,60 @@
+.box {
+  float: left;
+  width: 100%;
+}
+
+.App-logo {
+  max-width: 50%;
+  padding: 10% 0;
+  float: left;
+}
+
+.App-logo-left {
+  float: left;
+  padding: 10% 10% 0 10%;
+  width: 25%;
+  animation: App-logo-left infinite 20s linear;
+}
+
+.App-logo-rignt {
+  float: left;
+  padding: 10% 10% 0 10%;
+  width: 25%;
+  animation: App-logo-rignt infinite 20s linear;
+}
+
+@keyframes App-logo-rignt {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes App-logo-left {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.item-enter {
+  opacity: 0.01;
+}
+
+.item-enter.item-enter-active {
+  opacity: 1;
+  transition: opacity .2s ease-in;
+}
+.item-leave {
+  opacity: 1;
+}
+
+.item-leave.item-leave-active {
+  opacity: 0.01;
+  transition: opacity .2s ease-in;
+}
+
+.item-appear {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.item-appear.item-appear-active {
+  opacity: 1;
+}
